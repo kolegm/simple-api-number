@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "simple-api-number",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "homepage": "http://localhost:3000",
   "description": "API - receives as an input an integer number",
   "keywords": [],
