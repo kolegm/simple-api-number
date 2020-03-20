@@ -1,0 +1,20 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/flow_types/npm/.*
+<PROJECT_ROOT>/var/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+# https://flow.org/en/docs/config/options
+[options]
+log.file=var/log/flow.log
+all=true
+emoji=false
+#include_warnings=true
+module.ignore_non_literal_requires=true
+server.max_workers=4
+esproposal.optional_chaining=enable
