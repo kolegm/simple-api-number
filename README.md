@@ -3,7 +3,7 @@ Simple API - receives as an input an integer number
 
 URL: http://localhost:3000/input/:number
 
-Example 2 of usage
+Example 1 of usage
 ```curl
 curl http://localhost:3000/input/300
 ```
@@ -22,3 +22,9 @@ Simple test of availability
 culr http://localhost:3000/ping
 ```
 Idempotent result: {"message":"ping > pong"}
+
+U can call as well
+```curl
+culr http://localhost:3000
+```
+Redirecting to <a href="/input">/input</a>
