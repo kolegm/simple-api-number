@@ -1,3 +1,2 @@
 require('./ground');
-
-console.log('... yeeppp!');
+require('./src');
