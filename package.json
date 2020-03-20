@@ -1,0 +1,68 @@
+{
+  "private": true,
+  "name": "simple-api-number",
+  "version": "1.0.0",
+  "homepage": "http://localhost:3000",
+  "description": "API - receives as an input an integer number",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node index.js",
+    "pretest": "lint-staged && flow",
+    "posttest": "echo 'Test coverage could be here'\n",
+    "test": "echo 'Your tests should be run from this point'",
+    "flow-install": "npm run flow-typed install",
+    "flow-update": "npm run flow-typed update",
+    "build": "npm install && npm audit fix && npm run flow-install",
+    "up": "npm update",
+    "check": "npm outdated",
+    "upgrade": "npm run up && npm run check && npm run build && npm run flow-update",
+    "flow": "flow",
+    "flow-typed": "flow-typed",
+    "lint-staged": "lint-staged",
+    "push-version": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint -c config/eslint.js --fix --no-ignore"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/plugin-transform-strict-mode": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-flow": "^7.8.3",
+    "@babel/register": "^7.8.6",
+    "@babel/runtime-corejs2": "^7.8.7",
+    "@koa/cors": "^3.0.0",
+    "@koa/router": "^8.0.8",
+    "bottlejs": "^1.7.2",
+    "dotenv": "^8.2.0",
+    "koa": "^2.11.0",
+    "koa-async-validator": "^0.4.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-helmet": "^5.2.0",
+    "koa-requestid": "^2.1.0",
+    "koa-response-time": "^2.1.0"
+  },
+  "devDependencies": {
+    "flow": "^0.2.3",
+    "flow-bin": "^0.120.1",
+    "flow-typed": "^3.0.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "standard-version": "^7.1.0"
+  },
+  "author": "Oleg Kravchuk <kolegm.real@gmail.com>",
+  "readmeFilename": "./README.md",
+  "license": "MIT"
+}
