@@ -28,5 +28,5 @@ export default (bottle: Bottlejs) => {
   bottle.serviceFactory('handler.defaultPage', redirectTo, 'rootPath');
   bottle.serviceFactory('handler.input', input);
   bottle.serviceFactory('handler.numberValidation', numberValidation);
-  bottle.serviceFactory('handler.number', number, 'usecase.multiple');
+  bottle.serviceFactory('handler.number', number, 'service.multiple');
 };

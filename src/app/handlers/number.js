@@ -1,4 +1,4 @@
-export default (usecase: Function) => async (
+export default (service: Function) => async (
   context: KoaContext,
   next: Function
 ) => {
@@ -8,7 +8,7 @@ export default (usecase: Function) => async (
   let outcome = null;
 
   try {
-    outcome = await usecase(requested);
+    outcome = await service(requested);
     message = `Success! You have provided the number: ${context.params.number}`;
   } catch (error) {
     console.error(error);

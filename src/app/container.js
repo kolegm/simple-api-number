@@ -3,6 +3,7 @@ import Bottle from 'bottlejs';
 import infrastructure from '../infrastructure';
 import domains from '../domains';
 
+import services from './services';
 import handlers from './handlers';
 
 import middlewares from './middlewares';
@@ -15,6 +16,8 @@ bottle.strict = true;
 
 infrastructure(bottle);
 domains(bottle);
+
+services(bottle);
 
 bottle.constant('middlewares', middlewares);
 bottle.constant('rootPath', '/input');
