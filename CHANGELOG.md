@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/kolegm/simple-api-number/compare/v1.2.0...v1.2.1) (2020-03-22)
+
+
+### Bug Fixes
+
+* Move number processing from Domain level to App level (like app service) ([2159da4](https://github.com/kolegm/simple-api-number/commit/2159da44e49141b89f355ccbafc03976879d5de4))
+
 ## 1.2.0 (2020-03-20)
 
 
