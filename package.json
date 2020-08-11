@@ -71,7 +71,7 @@
     "prettier-eslint": "^9.0.1",
     "prettier-standard": "^16.2.1",
     "standard": "^14.3.3",
-    "standard-version": "^7.1.0"
+    "standard-version": "^8.0.1"
   },
   "author": "Oleg Kravchuk <kolegm.real@gmail.com>",
   "readmeFilename": "./README.md",
